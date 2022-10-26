@@ -20,3 +20,7 @@ if (product.price > 100) {
 }
 console.log(product);
 
+let discountPercentage = product.price * .10
+product.price = (product.price - discountPercentage)
+
+console.log(product);
