@@ -8,3 +8,15 @@ let product = {
 for (const keys in product) {
     console.log( `${keys}: ${product[keys]}`);
 }
+
+delete product.previousOwner;
+console.log(product);
+
+product.doesItWork = true
+console.log(product);
+
+if (product.price > 100) {
+    product.discountPercentage = product.price * .10
+}
+console.log(product);
+
