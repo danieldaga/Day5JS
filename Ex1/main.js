@@ -24,3 +24,5 @@ let discountPercentage = product.price * .10
 product.price = (product.price - discountPercentage)
 
 console.log(product);
+if ('discountPercentage' in product){
+    console.logg(`We got some ${product.name} on sale for just ${product.price}, that's${product.discountPercentage} off`)
